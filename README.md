@@ -9,6 +9,8 @@
 This is a sample showing how to create a web hud using the shared memory API for
 [RaceRoom Racing Experience][r3e] (R3E).
 
+For discussions or support go [here](https://forum.sector3studios.com/index.php?threads/in-gameplay-web-overlays.12947/).
+
 ## Quick start
 
 -   Extract [public/dash.zip](public/dash.zip)
