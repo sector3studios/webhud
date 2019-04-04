@@ -1,0 +1,28 @@
+.aids {
+	position: absolute;
+	top: 1030px;
+	left: 50%;
+	.inner {
+		transform: translate(-50%, 0);
+		border-radius: 50px;
+		padding: 5px;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.aid {
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+		fill: rgba(255, 255, 255, 0.3);
+		&.state-5 {
+			svg {
+				fill: rgb(196, 27, 27);
+			}
+		}
+	}
+	.svgIcon {
+		svg {
+			height: 35px;
+			width: 35px;
+		}
+	}
+}

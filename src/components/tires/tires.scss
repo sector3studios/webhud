@@ -1,0 +1,106 @@
+.tires {
+	position: absolute;
+	height: 100px;
+	width: 50px;
+	top: 940px;
+	left: 1750px;
+	margin-right: 10px;
+	.wheel {
+		background: #000;
+		width: 21px;
+		height: 46px;
+		float: left;
+		margin: 2px;
+		position: relative;
+		border-radius: 5px;
+
+		.temp {
+			position: absolute;
+			bottom: 100%;
+			margin-bottom: 3px;
+			z-index: 11;
+			font-size: 10px;
+			width: 100%;
+			text-align: center;
+		}
+		&.rearLeft,
+		&.rearRight {
+			.temp {
+				position: absolute;
+				bottom: auto;
+				top: 100%;
+				margin-top: 3px;
+				z-index: 11;
+				font-size: 10px;
+			}
+		}
+
+		&.rearLeft,
+		&.frontLeft {
+			.gripLevel {
+				left: -8px;
+			}
+		}
+		&.rearRight,
+		&.frontRight {
+			.gripLevel {
+				right: -8px;
+			}
+		}
+
+		&:after {
+			position: absolute;
+			display: block;
+			content: '';
+			border-radius: 3px;
+			top: 2px;
+			left: 2px;
+			right: 2px;
+			bottom: 2px;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+		}
+		.tireDirtOverlay {
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			right: 2px;
+			bottom: 2px;
+			border-radius: 5px;
+			border: 2px solid red;
+		}
+		.brake {
+			position: absolute;
+			width: 6px;
+			border-radius: 5px;
+			background: grey;
+			border: 1px solid #000;
+			top: 10px;
+			bottom: 10px;
+
+			&.frontLeft,
+			&.rearLeft {
+				left: -4px;
+			}
+			&.frontRight,
+			&.rearRight {
+				right: -4px;
+			}
+		}
+		.tireWearContainer {
+			top: 4px;
+			right: 4px;
+			left: 4px;
+			bottom: 4px;
+			position: absolute;
+			.tireWear {
+				background: #222;
+				border-top: 1px solid #555;
+				border-radius: 2px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}

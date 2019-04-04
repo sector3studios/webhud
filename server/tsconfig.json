@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"target": "es5",
+		"module": "es2015",
+		"resolveJsonModule": true,
+		"lib": ["es2017"],
+		"types": ["node"]
+	},
+	"include": ["**/*.ts", "**/*.tsx", "**/*.json"]
+}

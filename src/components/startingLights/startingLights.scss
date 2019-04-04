@@ -1,0 +1,63 @@
+.startingLights .inner {
+	position: absolute;
+	top: 130px;
+	left: 50%;
+	background: rgb(29, 29, 29);
+	border-radius: 100px;
+	padding: 10px;
+	transform: translate(-50%, 0);
+	box-shadow: 0 0 20px #000;
+	border: 2px solid #222;
+	background: linear-gradient(0, rgb(20, 20, 20), rgb(50, 50, 50));
+
+	.light {
+		width: 94px;
+		height: 90px;
+		float: left;
+		box-shadow: 0 0 20px #000;
+		border-radius: 100%;
+		background: url('./../../img/countdownLight.png'),
+			linear-gradient(0, rgb(30, 30, 30), rgb(10, 10, 10));
+		border: 1px solid #333333;
+		margin: 0 5px;
+		position: relative;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			content: '';
+			width: 94px;
+			height: 90px;
+			background: url('./../../img/countdownLightActive.png');
+			opacity: 0;
+			transition: opacity 0.25s;
+		}
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			content: '';
+			width: 94px;
+			height: 90px;
+			background: url('./../../img/countdownLightGreen.png');
+			opacity: 0;
+			transition: opacity 0.25s;
+			z-index: 11;
+		}
+
+		&.active {
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		&.green {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}

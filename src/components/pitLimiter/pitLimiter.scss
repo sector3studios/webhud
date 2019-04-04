@@ -1,0 +1,25 @@
+.pitLimiter {
+	display: none;
+	&.shouldShow {
+		display: block;
+	}
+
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 10px;
+	.max {
+		font-size: 20px;
+		padding: 0 5px 5px;
+	}
+	.current {
+		opacity: 0.6;
+	}
+	&.warning {
+		background: rgb(119, 0, 0);
+	}
+}

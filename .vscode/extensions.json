@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"eg2.tslint",
+		"EditorConfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"itslennysfault.scaffs-vscode",
+		"shinnn.stylelint"
+	]
+}

@@ -1,0 +1,203 @@
+.positionBarContainer.normal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	&.shouldShow {
+		display: block;
+	}
+	.positionBar {
+		position: absolute;
+		top: 0px;
+		padding-top: 3px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		right: 0;
+		background: rgba(0, 0, 0, 0.3);
+		white-space: pre;
+		bottom: 0;
+		white-space: nowrap;
+		width: 1920px;
+		height: 43px;
+		&:before {
+			position: absolute;
+			left: 100%;
+			top: 0;
+			bottom: 0;
+			width: 10000px;
+			content: '';
+			display: block;
+			background: rgba(0, 0, 0, 0.3);
+		}
+		&:after {
+			position: absolute;
+			right: 100%;
+			top: 0;
+			bottom: 0;
+			width: 10000px;
+			content: '';
+			display: block;
+			background: rgba(0, 0, 0, 0.3);
+		}
+		.player {
+			width: 148px;
+			height: 40px;
+			position: relative;
+			display: inline-block;
+			.position {
+				background: rgba(0, 0, 0, 0.15);
+				color: #fff;
+				width: 25px;
+				position: absolute;
+				top: 0;
+				line-height: 40px;
+				bottom: 0;
+				left: 0;
+				text-align: center;
+				font-weight: bold;
+			}
+			.name {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				left: 10px;
+				padding: 0 5px;
+				text-align: center;
+				padding-left: 20px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 15px;
+				text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+			}
+			.diff {
+				position: absolute;
+				text-align: center;
+				bottom: 4px;
+				right: 0;
+				left: 20px;
+				font-weight: bold;
+				text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			&.isUser {
+				background: rgba(0, 0, 0, 0.3);
+				.diff {
+					bottom: 8px;
+					font-size: 25px;
+					color: rgb(255, 253, 142);
+				}
+				.name {
+					display: none;
+				}
+			}
+
+			.classStyle {
+				display: block;
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0;
+				right: 0;
+				height: 8px;
+			}
+		}
+	}
+	.sessionTime,
+	.currentLap,
+	.currentPosition {
+		position: absolute;
+		top: 50px;
+		font-size: 40px;
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
+		.label {
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+	.sessionTime,
+	.currentLap {
+		right: 10px;
+	}
+	.currentPosition {
+		left: 10px;
+	}
+}
+
+.positionBarContainer.relative {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
+
+	top: 400px;
+	left: 1610px;
+	width: 290px;
+	transform-origin: bottom right;
+	border-radius: 5px;
+	.player {
+		padding: 4px 10px;
+		position: relative;
+		white-space: nowrap;
+		&:nth-child(odd) {
+			background: rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+		}
+		&:first-child {
+			padding-top: 10px;
+		}
+		&:last-child {
+			padding-bottom: 10px;
+		}
+		.position {
+			background: rgba(0, 0, 0, 0.5);
+			width: 25px;
+			font-weight: bold;
+			text-align: center;
+			display: inline-block;
+		}
+		.name {
+			display: inline-block;
+			padding: 0 5px;
+			overflow: hidden;
+			height: 20px;
+			margin-bottom: -5px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			vertical-align: top;
+			width: 190px;
+		}
+		.diff {
+			display: inline-block;
+		}
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
+		&.lapping {
+			color: #5997b0;
+		}
+		&.sameLap {
+			color: #fff;
+		}
+		&.lapped {
+			color: #b03a4a;
+		}
+
+		&.isUser {
+			background: rgba(0, 0, 0, 0.6);
+			color: rgb(255, 253, 142);
+		}
+		.classStyle {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 1px;
+			bottom: 1px;
+			left: -2px;
+			width: 6px;
+		}
+	}
+	.sessionTime,
+	.currentLap,
+	.currentPosition {
+		display: none;
+	}
+}

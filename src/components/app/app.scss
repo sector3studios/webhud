@@ -1,0 +1,353 @@
+%hand {
+	cursor: url('./../../img/cursorHand.cur'), pointer;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@font-face {
+	font-family: OswaldNumbersMono;
+	src: url('./../../fonts/OswaldNumbersMono.ttf');
+}
+body,
+html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Oswald;
+	line-height: 1;
+	overflow: hidden;
+}
+
+select,
+option,
+input,
+button {
+	font-family: Oswald;
+}
+
+// Need special font to make numbers monospace so they dont jump around on screen.
+// Take the font you intend on using, strip it so it only has digits and make them
+// all the same width.
+.mono {
+	font-family: OswaldNumbersMono, Oswald;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	cursor: url('./../../img/cursor.cur'), pointer;
+}
+
+input[type='checkbox'] {
+	@extend %hand;
+}
+
+input[type='checkbox'] {
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	box-shadow: 0 0 0 0.1vh rgba(255, 255, 255, 0.2);
+	padding: 1px;
+	-webkit-appearance: none;
+	border-radius: 100%;
+	outline: none;
+}
+input[type='checkbox']:hover {
+	box-shadow: 0 0 0 1px #333, 0 0 1.7vh #000;
+}
+input[type='checkbox']:checked {
+	background: #fff;
+	border: 4px solid #111;
+}
+// Removes tick in checkbox
+input[type='checkbox']:checked:after {
+	display: none;
+}
+
+input[type='range'] {
+	overflow: hidden;
+	-webkit-appearance: none;
+	border-width: 0;
+	background-color: transparent;
+	height: 10px;
+	width: 95%;
+	outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+	height: 100%;
+	-webkit-appearance: none;
+	color: #13bba4;
+	border-width: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+input[type='range']::-webkit-slider-thumb {
+	width: 5px;
+	-webkit-appearance: none;
+	height: 100%;
+	background: white;
+	box-shadow: -200px 0 0 200px #18b8eb;
+	border-width: 0;
+}
+
+#root {
+	height: 100%;
+	position: relative;
+}
+.app {
+	position: relative;
+	margin: 0 auto;
+	height: 100%;
+	&.hide {
+		.widgets {
+			display: none;
+		}
+	}
+}
+.viewport {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	zoom: 1;
+
+	html.debug & {
+		background: url(./../../img/debugBg.png);
+		background-size: cover;
+		background-position: center center;
+	}
+}
+.settings {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 14px;
+	background: rgba(0, 0, 0, 0.9);
+	width: 590px;
+	padding: 10px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.widget {
+		padding: 5px;
+		width: 31.33%;
+		overflow: hidden;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		margin: 6px 1%;
+
+		&:first-child {
+			padding-top: 5px;
+		}
+		&:last-child {
+			padding-bottom: 5px;
+		}
+
+		label {
+			display: block;
+			@extend %hand;
+			&:hover {
+				color: #ffffaa;
+			}
+			&.main {
+				border: 1px solid rgb(45, 45, 45);
+				background: rgb(32, 32, 32);
+				padding: 5px 0 5px 10px;
+			}
+			.text {
+				white-space: nowrap;
+				overflow: hidden;
+				width: 116px;
+				display: inline-block;
+				text-overflow: ellipsis;
+			}
+		}
+		input[type='checkbox'] {
+			float: right;
+			margin-left: 20px;
+			clear: both;
+			position: relative;
+			top: -3px;
+		}
+		.subWidget {
+			color: rgb(170, 170, 170);
+			padding: 5px 0 2px 10px;
+			height: 22px;
+		}
+	}
+	.button {
+		width: calc(100% - 20px);
+		margin: 5px 10px;
+		border: 1px solid #333;
+		background: #000;
+		color: #fff;
+		padding: 10px;
+		text-transform: uppercase;
+		font-size: 16px;
+		@extend %hand;
+
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	.languages {
+		display: flex;
+		width: 100%;
+		.language {
+			flex: auto;
+			margin: 10px;
+			border: 2px solid #fff;
+			padding: 10px 10px 13px;
+			border-radius: 10px;
+			text-align: center;
+			font-size: 20px;
+			width: 33.33%;
+			&.active {
+				background: #fff;
+				color: #000;
+			}
+		}
+	}
+}
+
+.help {
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px 15px;
+	border-radius: 20px;
+	font-size: 15px;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.4);
+	line-height: 1.4;
+	width: 400px;
+	a {
+		color: #ffa;
+	}
+	.versionMismatch {
+		color: yellow;
+		text-align: center;
+	}
+}
+
+.debug {
+	&.hide {
+		display: none;
+	}
+	input {
+		position: fixed;
+		top: 10px;
+		width: 600px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		top: 0;
+		padding: 10px;
+	}
+	.clear {
+		position: fixed;
+		top: 10px;
+		left: 50%;
+		width: 40px;
+		text-align: center;
+		transform: translate(260px, 0);
+		top: 0;
+		padding: 10px;
+		background: #000;
+		&:hover {
+			background: rgb(139, 0, 0);
+		}
+	}
+	.debugInfo {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0);
+		top: 26px;
+		background: rgba(0, 0, 0, 0.8);
+		max-height: 95%;
+		font-family: Inconsolata, 'Courier New', Courier, monospace;
+		font-size: 10px;
+		overflow: auto;
+		width: 600px;
+		padding: 10px;
+		z-index: 1111;
+		&::-webkit-scrollbar {
+			width: 10px;
+			background-color: rgb(27, 27, 27);
+			border-left: 0.1vh solid rgba(255, 255, 255, 0.1);
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 10px;
+			background-color: white;
+		}
+	}
+}
+
+.toggleSettings,
+.toggleVisibility {
+	position: absolute;
+	top: 150px;
+	left: 10px;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 100%;
+	&:hover {
+		@extend %hand;
+		.svgIcon svg {
+			fill: #ffa;
+		}
+	}
+	.svgIcon {
+		height: 50px;
+		width: 50px;
+		padding: 10px 5px;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.toggleVisibility {
+	top: 210px;
+}
+.editGrid {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	right: -100%;
+	bottom: 0;
+	pointer-events: none;
+	background: url(./../../img/editGrid.png) top left;
+	z-index: -1;
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+	}
+	&:before {
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		border-left: 2px solid #000;
+	}
+	&:after {
+		top: 50%;
+		left: 0;
+		right: 0;
+		border-top: 2px solid #000;
+	}
+}

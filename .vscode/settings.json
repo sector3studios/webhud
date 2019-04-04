@@ -1,0 +1,33 @@
+{
+	"files.exclude": {
+		"**/scaffolds": true,
+		"**/node_modules": true,
+		"**/dist": true,
+		"package-lock.json": true
+	},
+	"search.exclude": {
+		"**/scaffolds": true,
+		"**/node_modules": true,
+		"**/dist": true,
+		"package-lock.json": true
+	},
+	"editor.rulers": [80],
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.format.enable": true,
+	"typescript.format.insertSpaceAfterCommaDelimiter": true,
+	"typescript.format.insertSpaceAfterConstructor": false,
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+	"typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+	"typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+	"typescript.format.insertSpaceAfterTypeAssertion": false,
+	"typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"editor.tabSize": 4
+}

@@ -1,0 +1,45 @@
+.crewChief {
+	position: absolute;
+	top: 300px;
+	left: 1690px;
+	transform: translate(-50%, -50%);
+	* {
+		text-align: top;
+	}
+	.driverName,
+	.meta {
+		padding: 5px 15px;
+		margin: 1px;
+		position: relative;
+
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #000;
+			transform: skew(-20deg, 0);
+			z-index: -1;
+		}
+	}
+	.driverName {
+		.inner {
+			text-transform: uppercase;
+			width: 150px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+	.meta {
+		.waveForm {
+			position: relative;
+			top: 2px;
+			margin-left: 10px;
+			height: 14px;
+		}
+	}
+}

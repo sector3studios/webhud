@@ -1,0 +1,8 @@
+.<%= name.toCamelCase() %> {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #000;
+	padding: 10px;
+	transform: translate(-50%, -50%);
+}

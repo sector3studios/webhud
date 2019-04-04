@@ -1,0 +1,138 @@
+.graphs {
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+	min-width: 312px;
+	max-width: 624px;
+	&.wide {
+		max-width: 932px;
+	}
+	&.wider {
+		max-width: 1238px;
+	}
+	&.widest {
+		max-width: 1545px;
+	}
+	max-height: 95%;
+	&:hover {
+		background: rgba(0, 0, 0, 0.9);
+	}
+	cursor: pointer;
+	canvas {
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		margin: 0 2.5px;
+	}
+	.selection {
+		position: fixed;
+		right: 15px;
+		top: 60px;
+		width: 300px;
+		height: 1000px;
+		bottom: 0;
+		background: #000;
+		color: #fff;
+		border: 1px solid #333;
+		font-family: Oswald;
+		option {
+			padding: 2.5px 10px;
+			white-space: pre-line;
+			&.depth-0 {
+			}
+			&.depth-1 {
+				padding-left: 30px;
+				color: rgba(255, 255, 255, 0.6);
+				position: relative;
+				&:before {
+					content: '↳';
+					display: inline;
+					position: relative;
+					left: -10px;
+					font-family: arial;
+				}
+			}
+			&:nth-child(odd) {
+				background: rgba(255, 255, 255, 0.1);
+			}
+		}
+		&:focus {
+			outline: none;
+		}
+
+		&::-webkit-scrollbar {
+			width: 10px;
+			background-color: rgb(27, 27, 27);
+			border-left: 0.1vh solid rgba(255, 255, 255, 0.1);
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 10px;
+			background-color: white;
+		}
+	}
+	&.hasTracking {
+		.canvases {
+			padding: 5px;
+		}
+		.toggleEdit,
+		.reset,
+		.clearTracking {
+			display: none;
+		}
+		&:hover {
+			.toggleEdit,
+			.reset,
+			.clearTracking {
+				display: block;
+			}
+		}
+	}
+	.toggleEdit,
+	.reset,
+	.clearTracking,
+	.closeSelection,
+	.clearSelection {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.8);
+		padding: 5px;
+		border-radius: 0 5px 0 0;
+		&:hover {
+			color: #ffa;
+		}
+	}
+	.reset {
+		right: 0;
+		left: auto;
+	}
+	.clearTracking {
+		right: 0;
+		left: auto;
+		top: 0;
+		bottom: auto;
+	}
+	.closeSelection {
+		position: fixed;
+		top: 50%;
+		transform: translate(0, -50%);
+		bottom: auto;
+		left: auto;
+		right: 315px;
+		font-size: 50px;
+		border-radius: 5px 0 0 5px;
+		padding: 5px 10px 10px 10px;
+		cursor: pointer;
+	}
+	.clearSelection {
+		position: fixed;
+		top: 60px;
+		bottom: auto;
+		left: auto;
+		right: 315px;
+		font-size: 50px;
+		border-radius: 5px 0 0 5px;
+		padding: 5px 10px 10px 10px;
+		cursor: pointer;
+	}
+}

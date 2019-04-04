@@ -1,0 +1,24 @@
+.info {
+	position: absolute;
+	left: 20px;
+	top: 405px;
+	.warning {
+		background: rgba(0, 0, 0, 0.8);
+		padding: 5px 10px 5px 20px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		position: relative;
+		.svgIcon {
+			vertical-align: top;
+			svg {
+				position: absolute;
+				top: 5px;
+				left: 8px;
+				height: 17px;
+				width: 17px;
+				fill: orange;
+				margin-right: 10px;
+			}
+		}
+	}
+}

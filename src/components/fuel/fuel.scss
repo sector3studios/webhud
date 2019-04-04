@@ -1,0 +1,103 @@
+.fuel {
+	background: red;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
+	height: 100px;
+	position: absolute;
+	top: 940px;
+	left: 1660px;
+	margin-right: 70px;
+	border-radius: 5px;
+	width: 46px;
+	&.low {
+		background: rgba(255, 0, 0, 0.7);
+	}
+	.barContainer {
+		background: rgba(0, 0, 0, 0.5);
+		height: 100%;
+		margin: 0 1px;
+		width: 10px;
+		display: inline-block;
+		position: relative;
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		.bar {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-radius: 5px;
+			border: 1px solid rgba(0, 0, 0, 0.6);
+			background: linear-gradient(
+				45deg,
+				rgb(231, 231, 231),
+				rgb(201, 201, 201)
+			);
+			&:after {
+				position: absolute;
+				display: block;
+				content: '';
+				border-radius: 3px;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+		}
+	}
+	&.hasWheel {
+		height: 60px;
+		.steeringWheel {
+			position: absolute;
+			top: 100%;
+			left: 3px;
+			transform-origin: 19px 19px;
+			margin-top: 5px;
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 100%;
+
+			svg {
+				margin: -4px -4px -5px;
+				transform-origin: top left;
+				width: 46px;
+				fill: rgb(255, 255, 255);
+			}
+		}
+	}
+	width: 22px;
+	right: 150px;
+	padding-bottom: 30px;
+	.barContainer {
+		top: 10px;
+		height: 53px;
+	}
+	.svgIcon {
+		height: 15px;
+		width: 15px;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-top: -10px;
+		margin-left: 1px;
+		transform: translate(-50%, -50%);
+		svg {
+			fill: white;
+		}
+	}
+	.fuelPerLap,
+	.fuelLeft {
+		position: absolute;
+		font-size: 10px;
+		left: -5px;
+		right: -5px;
+		text-align: center;
+	}
+	.fuelPerLap {
+		top: 3px;
+	}
+	.fuelLeft {
+		bottom: 20px;
+	}
+}

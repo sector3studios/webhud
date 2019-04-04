@@ -1,0 +1,149 @@
+.progress {
+	display: none;
+	position: relative;
+	&.shouldShow {
+		display: block;
+	}
+
+	.estimateContainer {
+		position: absolute;
+		top: 250px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+	}
+
+	.estimate {
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 10px;
+		font-size: 30px;
+		padding: 5px 10px;
+		color: rgba(255, 255, 255, 1);
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.4);
+		transition: color 0.3s;
+		.qualifyInfo {
+			position: absolute;
+			top: 75px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 300px;
+			white-space: nowrap;
+			font-size: 15px;
+			color: #fff;
+			.esimatedLapTime {
+				text-shadow: 0 0 7px rgba(0, 0, 0, 1), 0 0 7px rgba(0, 0, 0, 1);
+				position: absolute;
+				left: 0;
+				padding: 2px;
+			}
+			.esimatedPosition {
+				text-shadow: 0 0 7px rgba(0, 0, 0, 1), 0 0 7px rgba(0, 0, 0, 1);
+				position: absolute;
+				right: 0;
+				padding: 2px;
+			}
+		}
+	}
+	.deltaNextContainer {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 299px;
+		background: #000;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.deltaNext {
+		height: 3px;
+		background: #fff;
+	}
+	.simple {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0);
+		top: 25px;
+		height: 21px;
+		width: 300px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 5px 5px 0 0;
+		background: rgba(0, 0, 0, 0.4);
+		.good,
+		.bad {
+			height: 100%;
+			position: absolute;
+			top: 0;
+			background: rgba(255, 255, 255, 1);
+		}
+		.good {
+			border-left: 1px solid #222;
+			left: 50%;
+			background: rgb(9, 216, 61);
+			border-radius: 0 4px 0 0;
+		}
+		.bad {
+			border-right: 1px solid #222;
+			right: 50%;
+			background: rgb(122, 22, 22);
+			border-radius: 4px 0 0 0;
+		}
+	}
+
+	&.overallGaining {
+		.estimate {
+			color: rgb(9, 216, 61);
+		}
+	}
+	&.overallLoosing {
+		.estimate {
+			color: rgb(122, 22, 22);
+		}
+	}
+	&.race {
+		.estimate {
+			color: #fff;
+		}
+	}
+
+	.sectors {
+		position: absolute;
+		top: 35px;
+		width: 100%;
+		.sector {
+			height: 5px;
+			background: rgb(41, 41, 41);
+			display: inline-block;
+			width: 10%;
+			position: relative;
+			width: 33.333%;
+			&:after {
+				position: absolute;
+				content: '';
+				display: block;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-right: 1px solid rgba(255, 255, 255, 0.1);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				border-top: 1px solid rgba(255, 255, 255, 0.1);
+			}
+			&:first-child {
+				&:after {
+					border-left: 1px solid rgba(255, 255, 255, 0.1);
+				}
+			}
+			&.pb {
+				background: green;
+			}
+			&.gb {
+				background: purple;
+			}
+			&.inactive {
+				background: rgb(0, 0, 0);
+			}
+		}
+	}
+}

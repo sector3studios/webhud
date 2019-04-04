@@ -1,0 +1,696 @@
+msgid ""
+msgstr ""
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. ./src/components/app/app.tsx:643:643
+#. <br />
+#. {_(
+#. '-webHudUrl=https://sector3studios.github.io/webhud/dist/'
+msgid "-webHudUrl=https://sector3studios.github.io/webhud/dist/"
+msgstr ""
+
+#. ./src/components/damage/damage.tsx:98:98
+#. >
+#. <div className="label">{_('Aerodynamics')}</div>
+#. <div className="barContainer">
+msgid "Aerodynamics"
+msgstr "Karosserie"
+
+#. ./src/components/flags/flags.tsx:132:132
+#. <div className="flagBlock" />
+#. <div className="text">{_('Black flag')}</div>
+#. </div>
+msgid "Black flag"
+msgstr "Schwarze Flagge"
+
+#. ./src/components/flags/flags.tsx:109:109
+#. BlackAndWhite: {
+#. 1: _('Blue flag 1st warning'),
+#. 2: _('Blue flag 2nd warning'),
+msgid "Blue flag 1st warning"
+msgstr "Blaue Flagge, 1. Verwarnung"
+
+#. ./src/components/flags/flags.tsx:110:110
+#. 1: _('Blue flag 1st warning'),
+#. 2: _('Blue flag 2nd warning'),
+#. 3: _('Wrong way'),
+msgid "Blue flag 2nd warning"
+msgstr "Blaue Flagge, 2. Verwarnung"
+
+#. ./src/components/app/app.tsx:215:215
+#. zoom: 1,
+#. name: __('Car assists'),
+#. subSettings: {},
+msgid "Car assists"
+msgstr "Fahrassistenten"
+
+#. ./src/components/flags/flags.tsx:163:163
+#. <div className="text">
+#. {_('Checkered flag: Last lap!')}
+#. </div>
+msgid "Checkered flag: Last lap!"
+msgstr "Karierte Flagge: Letzte Runde!"
+
+#. ./src/components/graphs/graphs.tsx:372:372
+#. >
+#. {_('Clear')}
+#. </div>
+msgid "Clear"
+msgstr "Zurücksetzen"
+
+#. ./src/components/app/app.tsx:893:893
+#. <button className="button" onClick={this.toggleSettings}>
+#. {_('Close')}
+#. </button>
+#. ./src/components/graphs/graphs.tsx:364:364
+#. </div>
+#. >
+#. {_('Close')}
+msgid "Close"
+msgstr "Schließen"
+
+#. ./src/components/app/app.tsx:270:270
+#. zoom: 1,
+#. name: __('Crew chief'),
+#. subSettings: {},
+msgid "Crew chief"
+msgstr "Crew Chief"
+
+#. ./src/components/app/app.tsx:97:97
+#. currentLap: {
+#. text: __('Current lap'),
+#. enabled: true
+msgid "Current lap"
+msgstr "Akt. Runde"
+
+#. ./src/components/app/app.tsx:89:89
+#. currentPosition: {
+#. text: __('Current position'),
+#. enabled: true
+msgid "Current position"
+msgstr "Akt. Position"
+
+#. ./src/components/pitLimiter/pitLimiter.tsx:53:53
+#. <div className="current">
+#. {_('Current speed')}:{' '}
+#. <span className="mono">{this.speed.toFixed(0)}</span>{' '}
+msgid "Current speed"
+msgstr "Akt. Geschwindigkeit"
+
+#. ./src/components/flags/flags.tsx:112:112
+#. 3: _('Wrong way'),
+#. 4: _('Cutting track')
+#. }
+msgid "Cutting track"
+msgstr "Abgekürzt"
+
+#. ./src/components/overtakingAids/overtakingAids.tsx:94:94
+#. >
+#. {_('DRS')}:
+#. {this.drs.NumActivationsLeft > 99 ? (
+msgid "DRS"
+msgstr "DRS"
+
+#. ./src/components/overtakingAids/overtakingAids.tsx:106:106
+#. <div className="title">
+#. {_('DRS Activated')}
+#. </div>
+msgid "DRS Activated"
+msgstr "DRS aktiviert"
+
+#. ./src/components/app/app.tsx:314:314
+#. zoom: 1,
+#. name: __('Damage'),
+#. subSettings: {},
+msgid "Damage"
+msgstr "Schaden"
+
+#. ./src/components/app/app.tsx:114:114
+#. zoom: 1,
+#. name: __('Delta'),
+#. subSettings: {
+msgid "Delta"
+msgstr "Zeitdifferenz"
+
+#. ./src/components/app/app.tsx:121:121
+#. deltaBars: {
+#. text: __('Delta bars'),
+#. enabled: true
+msgid "Delta bars"
+msgstr "Als Leiste"
+
+#. ./src/components/app/app.tsx:117:117
+#. deltaText: {
+#. text: __('Delta text'),
+#. enabled: true
+msgid "Delta text"
+msgstr "Als Text"
+
+#. ./src/components/app/app.tsx:640:640
+#. )}
+#. {_('Download')} <a href="dash.zip">{_('dash.zip')}</a>{' '}
+#. {_('and run it')}
+msgid "Download"
+msgstr "Download"
+
+#. ./src/components/pitstop/pitstop.tsx:144:144
+#. <div className="task">
+#. {_('Driver Change')}
+#. </div>
+msgid "Driver Change"
+msgstr "Fahrerwechsel"
+
+#. ./src/components/damage/damage.tsx:57:57
+#. >
+#. <div className="label">{_('Engine')}</div>
+#. <div className="barContainer">
+msgid "Engine"
+msgstr "Motor"
+
+#. ./src/components/app/app.tsx:871:871
+#. de: _('German'),
+#. en: _('English'),
+#. fr: _('French')
+msgid "English"
+msgstr "Englisch"
+
+#. ./src/components/progress/progress.tsx:305:305
+#. <div className="esimatedPosition">
+#. {_('Est. Pos')}:{' '}
+#. <span className="mono">
+msgid "Est. Pos"
+msgstr "Vorauss. Position"
+
+#. ./src/components/progress/progress.tsx:293:293
+#. <div className="esimatedLapTime">
+#. {_('Est. Time')}:{' '}
+#. <span className="mono">
+msgid "Est. Time"
+msgstr "Vorauss. Rundenzeit"
+
+#. ./src/components/app/app.tsx:129:129
+#. estimatedLapTime: {
+#. text: __('Estimated lap time'),
+#. enabled: true
+msgid "Estimated lap time"
+msgstr "Vorauss. Rundenzeit"
+
+#. ./src/components/app/app.tsx:133:133
+#. estimatedPosition: {
+#. text: __('Estimated position'),
+#. enabled: true
+msgid "Estimated position"
+msgstr "Vorauss. Position"
+
+#. ./src/components/app/app.tsx:259:259
+#. zoom: 1,
+#. name: __('Flags'),
+#. subSettings: {},
+msgid "Flags"
+msgstr "Flaggen"
+
+#. ./src/components/app/app.tsx:872:872
+#. en: _('English'),
+#. fr: _('French')
+#. };
+msgid "French"
+msgstr "Französisch"
+
+#. ./src/components/pitstop/pitstop.tsx:152:152
+#. <div className="task">
+#. {_('Front tires')}
+#. </div>
+msgid "Front tires"
+msgstr "Vorderreifen"
+
+#. ./src/components/pitstop/pitstop.tsx:162:162
+#. <div className="task">
+#. {_('Front wing')}
+#. </div>
+msgid "Front wing"
+msgstr "Frontflügel"
+
+#. ./src/components/app/app.tsx:336:336
+#. zoom: 1,
+#. name: __('Fuel'),
+#. subSettings: {},
+msgid "Fuel"
+msgstr "Treibstoff"
+
+#. ./src/components/info/info.tsx:86:86
+#. />
+#. {_('Fuel at')}: {`${this.fuelPercent.toFixed(1)}%`}
+#. </div>
+msgid "Fuel at"
+msgstr "Verbl. Treibstoff"
+
+#. ./src/components/gforce/gforce.tsx:129:129
+#. })}
+#. <div className="letter">{_('G')}</div>
+#. {this.gForceHistory.map((point, i) => {
+msgid "G"
+msgstr "G"
+
+#. ./src/components/app/app.tsx:204:204
+#. zoom: 1,
+#. name: __('G-Force'),
+#. subSettings: {},
+msgid "G-Force"
+msgstr "G-Kräfte"
+
+#. ./src/components/app/app.tsx:657:657
+#. }, 100);
+#. return <div className="help">{_('Game paused')}</div>;
+#. }
+msgid "Game paused"
+msgstr "Spiel pausiert"
+
+#. ./src/components/app/app.tsx:870:870
+#. const languageLookup = {
+#. de: _('German'),
+#. en: _('English'),
+msgid "German"
+msgstr "Deutsch"
+
+#. ./src/components/flags/flags.tsx:155:155
+#. <div className="flagBlock" />
+#. <div className="text">{_('Go!')}</div>
+#. </div>
+msgid "Go!"
+msgstr "Los!"
+
+#. ./src/components/flags/flags.tsx:139:139
+#. <div className="flagBlock" />
+#. <div className="text">{_('Hazard on the track')}</div>
+#. </div>
+msgid "Hazard on the track"
+msgstr "Gefahr auf der Strecke"
+
+#. ./src/components/app/app.tsx:137:137
+#. hideInRace: {
+#. text: __('Hide in race'),
+#. enabled: false
+msgid "Hide in race"
+msgstr "Im Rennen ausblenden"
+
+#. ./src/components/pitLimiter/pitLimiter.tsx:48:48
+#. <div className="max">
+#. {_('In Pit Lane')}:{' '}
+#. <span className="mono">{this.pitlaneMax.toFixed(0)}</span>{' '}
+msgid "In Pit Lane"
+msgstr "In Boxengasse"
+
+#. ./src/components/app/app.tsx:188:188
+#. zoom: 1,
+#. name: __('Inputs'),
+#. subSettings: {
+msgid "Inputs"
+msgstr "Eingaben"
+
+#. ./src/components/pitLimiter/pitLimiter.tsx:50:50
+#. ./src/components/pitLimiter/pitLimiter.tsx:55:55
+#. <span className="mono">{this.speed.toFixed(0)}</span>{' '}
+#. {_('Kph')}
+#. </div>
+#. </div>
+#. <span className="mono">{this.pitlaneMax.toFixed(0)}</span>{' '}
+#. {_('Kph')}
+msgid "Kph"
+msgstr "Km/h"
+
+#. ./src/components/positionBar/positionBar.tsx:463:463
+#. </span>
+#. <div className="label">{_('Lap')}</div>
+#. </div>
+msgid "Lap"
+msgstr "Runde"
+
+#. ./src/components/app/app.tsx:93:93
+#. lapTime: {
+#. text: __('Lap time'),
+#. enabled: true
+#. ./src/components/positionBar/positionBar.tsx:452:452
+#. </div>
+#. </span>
+#. <div className="label">{_('Lap time')}</div>
+msgid "Lap time"
+msgstr "Rundenzeit"
+
+#. ./src/components/pitstop/pitstop.tsx:117:117
+#. <div className="left">
+#. {_('Laps left to pit')}:{' '}
+#. {this.pitWindowEnd - this.currentLap}
+msgid "Laps left to pit"
+msgstr "Verbleibende Runden bis Boxenstopp"
+
+#. ./src/components/app/app.tsx:150:150
+#. zoom: 1,
+#. name: __('Motec'),
+#. subSettings: {},
+msgid "Motec"
+msgstr "Motec"
+
+#. ./src/components/app/app.tsx:125:125
+#. deltaNextPosition: {
+#. text: __('Next position'),
+#. enabled: true
+msgid "Next position"
+msgstr "Nächste Platzierung"
+
+#. ./src/components/overtakingAids/overtakingAids.tsx:133:133
+#. <div className="title">
+#. {_('P2P')} - {_('time left')}
+#. </div>
+msgid "P2P"
+msgstr "P2P"
+
+#. ./src/components/overtakingAids/overtakingAids.tsx:151:151
+#. <div className="title">
+#. {_('P2P - Wait')}
+#. </div>
+msgid "P2P - Wait"
+msgstr "P2P - Warten"
+
+#. ./src/components/app/app.tsx:303:303
+#. zoom: 1,
+#. name: __('P2P/DRS'),
+#. subSettings: {},
+msgid "P2P/DRS"
+msgstr "P2P/DRS"
+
+#. ./src/components/overtakingAids/overtakingAids.tsx:125:125
+#. >
+#. {_('P2P: x')}
+#. {this.pushToPass.AmountLeft}
+msgid "P2P: x"
+msgstr "P2P: x"
+
+#. ./src/components/pitstop/pitstop.tsx:198:198
+#. <div className="totalTime">
+#. {_('Pit duration')}:{' '}
+#. <span className="mono">
+msgid "Pit duration"
+msgstr "Boxenstoppdauer"
+
+#. ./src/components/app/app.tsx:281:281
+#. zoom: 1,
+#. name: __('Pit limiter'),
+#. subSettings: {},
+msgid "Pit limiter"
+msgstr "Tempobegrenzer"
+
+#. ./src/components/pitstop/pitstop.tsx:113:113
+#. <div className="title">
+#. {_('Pit window is open')}
+#. </div>
+msgid "Pit window is open"
+msgstr "Boxenstoppfenster offen"
+
+#. ./src/components/app/app.tsx:226:226
+#. zoom: 1,
+#. name: __('Pitstop'),
+#. subSettings: {},
+msgid "Pitstop"
+msgstr "Boxenstopp"
+
+#. ./src/components/positionBar/positionBar.tsx:436:436
+#. </span>
+#. <div className="label">{_('Position')}</div>
+#. </div>
+msgid "Position"
+msgstr "Position"
+
+#. ./src/components/app/app.tsx:86:86
+#. zoom: 1,
+#. name: __('Position bar'),
+#. subSettings: {
+msgid "Position bar"
+msgstr "Positionsleiste"
+
+#. ./src/components/positionBar/positionBar.tsx:375:375
+#. case 0:
+#. sessionName = _('Practice');
+#. break;
+msgid "Practice"
+msgstr "Training"
+
+#. ./src/components/pitstop/pitstop.tsx:140:140
+#. {this.pit.preparing && (
+#. <div className="task">{_('Preparing')}</div>
+#. )}
+msgid "Preparing"
+msgstr "Vorbereitung"
+
+#. ./src/components/positionBar/positionBar.tsx:378:378
+#. case 1:
+#. sessionName = _('Qualification');
+#. break;
+msgid "Qualification"
+msgstr "Qualifikation"
+
+#. ./src/components/positionBar/positionBar.tsx:381:381
+#. case 2:
+#. sessionName = _('Race');
+#. break;
+msgid "Race"
+msgstr "Rennen"
+
+#. ./src/components/app/app.tsx:292:292
+#. zoom: 1,
+#. name: __('Race info'),
+#. subSettings: {},
+msgid "Race info"
+msgstr "Renninformationen"
+
+#. ./src/components/app/app.tsx:237:237
+#. zoom: 1,
+#. name: __('Race start lights'),
+#. subSettings: {},
+msgid "Race start lights"
+msgstr "Startampel"
+
+#. ./src/components/pitstop/pitstop.tsx:157:157
+#. <div className="task">
+#. {_('Rear tires')}
+#. </div>
+msgid "Rear tires"
+msgstr "Hinterreifen"
+
+#. ./src/components/pitstop/pitstop.tsx:166:166
+#. {this.pit.rearWing && (
+#. <div className="task">{_('Rear wing')}</div>
+#. )}
+msgid "Rear wing"
+msgstr "Heckflügel"
+
+#. ./src/components/pitstop/pitstop.tsx:148:148
+#. {this.pit.refueling && (
+#. <div className="task">{_('Refueling')}</div>
+#. )}
+msgid "Refueling"
+msgstr "Auftanken"
+
+#. ./src/components/app/app.tsx:161:161
+#. zoom: 1,
+#. name: __('Relative'),
+#. subSettings: {},
+msgid "Relative"
+msgstr "Relativer Abstand"
+
+#. ./src/components/app/app.tsx:890:890
+#. <button className="button" onClick={this.resetSettings}>
+#. {_('Reset settings')}
+#. </button>
+msgid "Reset settings"
+msgstr "Einstellungen zurücksetzen"
+
+#. ./src/components/graphs/graphs.tsx:386:386
+#. <div className="reset" onClick={this.reset}>
+#. {_('Reset values (c)')}
+#. </div>
+msgid "Reset values (c)"
+msgstr "Werte zurücksetzen (c)"
+
+#. ./src/components/app/app.tsx:101:101
+#. sessionTime: {
+#. text: __('Session time'),
+#. enabled: true
+msgid "Session time"
+msgstr "Verbleibende Zeit"
+
+#. ./src/components/app/app.tsx:175:175
+#. shouldBeep: {
+#. text: __('Should beep'),
+#. enabled: true
+msgid "Should beep"
+msgstr "Ton ausgeben"
+
+#. ./src/components/flags/flags.tsx:184:184
+#. <div className="flagBlock" />
+#. <div className="text">{_('Slow cars ahead')}</div>
+#. </div>
+msgid "Slow cars ahead"
+msgstr "Langsame Fahrzeuge voraus"
+
+#. ./src/components/app/app.tsx:172:172
+#. zoom: 1,
+#. name: __('Spotting'),
+#. subSettings: {
+msgid "Spotting"
+msgstr "Fahrzeugradar"
+
+#. ./src/components/app/app.tsx:191:191
+#. steeringInput: {
+#. text: __('Steering wheel'),
+#. enabled: true
+msgid "Steering wheel"
+msgstr "Lenkrad"
+
+#. ./src/components/damage/damage.tsx:119:119
+#. ./src/components/pitstop/pitstop.tsx:170:170
+#. <div className="task">
+#. {_('Suspension')}
+#. </div>
+#. <div className="barContainer">
+#. <div className="label">{_('Suspension')}</div>
+#. >
+msgid "Suspension"
+msgstr "Fahrwerk"
+
+#. ./src/components/crewChief/crewChief.tsx:93:93
+#. <div className="meta">
+#. {_('Team Radio')}
+#. <img
+msgid "Team Radio"
+msgstr "Boxenfunk"
+
+#. ./src/components/app/app.tsx:248:248
+#. zoom: 1,
+#. name: __('Telemetry'),
+#. subSettings: {},
+msgid "Telemetry"
+msgstr "Telemetrie"
+
+#. ./src/components/info/info.tsx:78:78
+#. />
+#. {_('This lap will not count')}
+#. </div>
+msgid "This lap will not count"
+msgstr "Runde ungültig"
+
+#. ./src/components/pitstop/pitstop.tsx:122:122
+#. <div className="left">
+#. {_('Time left to pit')}:{' '}
+#. {formatTime(
+msgid "Time left to pit"
+msgstr "Verbl. Zeit für Boxenstopp"
+
+#. ./src/components/app/app.tsx:325:325
+#. zoom: 1,
+#. name: __('Tires'),
+#. subSettings: {},
+msgid "Tires"
+msgstr "Reifen"
+
+#. ./src/components/damage/damage.tsx:77:77
+#. >
+#. <div className="label">{_('Transmission')}</div>
+#. <div className="barContainer">
+msgid "Transmission"
+msgstr "Getriebe"
+
+#. ./src/components/app/app.tsx:721:721
+#. // tslint:disable-next-line:max-line-length
+#. placeholder={_('Type to filter keys')}
+#. />
+msgid "Type to filter keys"
+msgstr "Nach Stichworten filtern"
+
+#. ./src/components/app/app.tsx:637:637
+#. <div className="versionMismatch">
+#. {_('Version mismatch')}!
+#. </div>
+msgid "Version mismatch"
+msgstr "Falsche Version"
+
+#. ./src/components/pitstop/pitstop.tsx:182:182
+#. <div className="task">
+#. {_('Waiting...')}
+#. </div>
+msgid "Waiting..."
+msgstr "Warte..."
+
+#. ./src/components/positionBar/positionBar.tsx:384:384
+#. case 3:
+#. sessionName = _('Warmup');
+#. break;
+msgid "Warmup"
+msgstr "Aufwärmen"
+
+#. ./src/components/flags/flags.tsx:111:111
+#. 2: _('Blue flag 2nd warning'),
+#. 3: _('Wrong way'),
+#. 4: _('Cutting track')
+msgid "Wrong way"
+msgstr "Falsche Richtung"
+
+#. ./src/components/app/app.tsx:724:724
+#. <div className="clear" onClick={this.clearDebugFilter}>
+#. {_('X')}
+#. </div>
+msgid "X"
+msgstr "X"
+
+#. ./src/components/flags/flags.tsx:147:147
+#. <div className="text">
+#. {_('Yield to the car behind')}
+#. </div>
+msgid "Yield to the car behind"
+msgstr "Verfolger passieren lassen"
+
+#. ./src/components/app/app.tsx:641:641
+#. {_('Download')} <a href="dash.zip">{_('dash.zip')}</a>{' '}
+#. {_('and run it')}
+#. <br />
+msgid "and run it"
+msgstr "und führe die Datei aus"
+
+#. ./src/components/app/app.tsx:640:640
+#. )}
+#. {_('Download')} <a href="dash.zip">{_('dash.zip')}</a>{' '}
+#. {_('and run it')}
+msgid "dash.zip"
+msgstr "dash.zip"
+
+#. 'lap'
+#. )}`)
+#. ./src/components/positionBar/positionBar.tsx:264:264
+#. ./src/components/positionBar/positionBar.tsx:288:288
+#. )}`)
+#. : (driver.diff = `-${Math.abs(driver.lapDiff)} ${_(
+#. 'lap'
+#. : (driver.diff = `-${Math.abs(driver.lapDiff)} ${_(
+msgid "lap"
+msgstr "Runde"
+
+#. 'laps'
+#. ./src/components/positionBar/positionBar.tsx:261:261
+#. ./src/components/positionBar/positionBar.tsx:285:285
+#. Math.abs(driver.lapDiff) > 1
+#. ? (driver.diff = `-${Math.abs(driver.lapDiff)} ${_(
+#. 'laps'
+#. ? (driver.diff = `-${Math.abs(driver.lapDiff)} ${_(
+#. Math.abs(driver.lapDiff) > 1
+msgid "laps"
+msgstr "Runden"
+
+#. ./src/components/overtakingAids/overtakingAids.tsx:133:133
+#. <div className="title">
+#. {_('P2P')} - {_('time left')}
+#. </div>
+msgid "time left"
+msgstr "Verbl. Zeit"

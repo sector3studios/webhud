@@ -1,0 +1,59 @@
+.spottingContainer {
+	display: none;
+	&.shouldShow {
+		display: block;
+	}
+	width: 100px;
+	height: 100px;
+	bottom: 40px;
+	right: 270px;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
+	background: rgba(0, 0, 0, 0.5) url(./../../img/grid.png);
+	transition: background 1s;
+	border: 2px solid #333;
+	&.danger {
+		background: rgba(121, 17, 17, 0.5) url(./../../img/grid.png);
+	}
+	.warning {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transition: opacity 0.5s;
+		z-index: -1;
+		border-radius: 100%;
+		&.left {
+			background: url(./../../img/gridWarningLeft.png);
+		}
+		&.right {
+			background: url(./../../img/gridWarningRight.png);
+		}
+	}
+}
+.spotting {
+	transform-origin: top left;
+	width: 500px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	pointer-events: none;
+	.driver {
+		transform-origin: top left;
+		width: 10px;
+		height: 20px;
+		position: absolute;
+		border-radius: 3px;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+		font-size: 10px;
+		&.isUser {
+			background: #fff !important;
+		}
+	}
+}

@@ -1,0 +1,79 @@
+.overtakingAids {
+	.available {
+		position: absolute;
+		top: 1000px;
+		left: 910px;
+		text-align: center;
+		padding: 5px 10px;
+		background: rgba(0, 0, 0, 0.5);
+		width: 95px;
+		border-radius: 7px;
+		transform-origin: bottom right;
+		font-size: 17px;
+		.infinity {
+			font-size: 30px;
+			line-height: 0px;
+			font-family: monospace;
+			position: relative;
+			top: 2px;
+			padding: 0 0 0 5px;
+		}
+	}
+	.pushToPass,
+	.drs {
+		&.engaged {
+			.available {
+				background: rgba(0, 12, 121, 0.8);
+				color: #ffa;
+			}
+		}
+		&.unavailable {
+			.available {
+				background: rgba(121, 0, 0, 0.8);
+				color: #ffa;
+			}
+		}
+	}
+	.meta {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		.timeLeft,
+		.waitTimeLeft,
+		.drsActive {
+			background: rgba(0, 0, 0, 0.5);
+			padding: 10px;
+			border-radius: 5px;
+			width: 200px;
+			.title {
+				font-size: 13px;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+		}
+		.drsActive {
+			.title {
+				font-size: 20px;
+			}
+		}
+
+		.barContainer {
+			background: rgba(0, 0, 0, 0.5);
+			.bar {
+				height: 5px;
+				border-radius: 5px;
+			}
+		}
+		.timeLeft {
+			.bar {
+				background: #fff;
+			}
+		}
+		.waitTimeLeft {
+			.bar {
+				background: rgba(121, 0, 0, 0.8);
+			}
+		}
+	}
+}

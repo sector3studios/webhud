@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"resolveJsonModule": false,
+		"lib": ["es2017", "dom", "dom.iterable"],
+		"types": ["webpack-env", "google.analytics", "process-env"]
+	},
+	"include": ["**/*.ts", "**/*.tsx"]
+}

@@ -1,0 +1,339 @@
+{
+	"extends": "tslint:latest",
+	"linterOptions": {
+		"exclude": ["scaffolds/*"]
+	},
+	"rulesDirectory": [
+		"./node_modules/tslint-consistent-codestyle/rules",
+		"./node_modules/tslint-misc-rules/rules",
+		"./node_modules/tslint-eslint-rules/dist/rules",
+		"./node_modules/tslint-microsoft-contrib",
+		"./node_modules/tslint-react/rules",
+		"tslint-config-prettier"
+	],
+	"rules": {
+		"adjacent-overload-signatures": true,
+		"align": [true, "parameters", "members", "statements", "elements"],
+		"array-type": [true, "array"],
+		"arrow-parens": true,
+		"ban-comma-operator": true,
+		"ban-types": [true, []],
+		"binary-expression-operand-order": true,
+		"callable-types": true,
+		"class-name": true,
+		"comment-format": [true, "check-space"],
+		"curly": true,
+		"encoding": true,
+		"eofline": true,
+		"forin": true,
+		"import-spacing": true,
+		"indent": [false, "tabs"],
+		"interface-name": [true, "always-prefix"],
+		"interface-over-type-literal": true,
+		"label-position": true,
+		"max-line-length": [true, 80],
+		"new-parens": true,
+		"no-angle-bracket-type-assertion": true,
+		"no-arg": true,
+		"no-bitwise": false,
+		"no-conditional-assignment": true,
+		"no-consecutive-blank-lines": [true, 1],
+		"no-construct": true,
+		"no-debugger": true,
+		"no-duplicate-imports": true,
+		"no-duplicate-super": true,
+		"no-duplicate-switch-case": true,
+		"no-duplicate-variable": true,
+		"no-dynamic-delete": true,
+		"no-empty": [true, "allow-empty-catch"],
+		"no-eval": true,
+		"no-implicit-dependencies": [true, "dev"],
+		"no-internal-module": true,
+		"no-invalid-template-strings": true,
+		"no-invalid-this": true,
+		"no-irregular-whitespace": true,
+		"no-mergeable-namespace": true,
+		"no-misused-new": true,
+		"no-namespace": [true, "allow-declarations"],
+		"no-parameter-properties": true,
+		"no-parameter-reassignment": true,
+		"no-redundant-jsdoc": true,
+		"no-reference": true,
+		"no-reference-import": true,
+		"no-return-await": true,
+		"no-shadowed-variable": true,
+		"no-sparse-arrays": true,
+		"no-string-throw": true,
+		"no-submodule-imports": false,
+		"no-switch-case-fall-through": true,
+		"no-this-assignment": true,
+		"no-trailing-whitespace": [true, "ignore-template-strings"],
+		"no-unnecessary-callback-wrapper": true,
+		"no-unnecessary-class": true,
+		"no-unnecessary-initializer": true,
+		"no-unsafe-finally": true,
+		"no-var-keyword": true,
+		"number-literal-format": false,
+		"object-literal-key-quotes": [true, "as-needed"],
+		"object-literal-shorthand": true,
+		"one-line": [true, "check-open-brace", "check-whitespace"],
+		"one-variable-per-declaration": [true],
+		"only-arrow-functions": [true, "allow-declarations"],
+		"prefer-conditional-expression": [true, "check-else-if"],
+		"prefer-const": true,
+		"prefer-for-of": false,
+		"prefer-method-signature": true,
+		"prefer-object-spread": true,
+		"prefer-template": [true, "allow-single-concat"],
+		"quotemark": [true, "single", "jsx-double"],
+		"radix": true,
+		"semicolon": [true, "always", "ignore-bound-class-methods"],
+		"space-within-parens": [false],
+		"switch-final-break": [true, "always"],
+		"trailing-comma": [
+			true,
+			{ "multiline": "never", "singleline": "never" }
+		],
+		"no-inferrable-types": true,
+		"triple-equals": [true, "allow-null-check"],
+		"type-literal-delimiter": true,
+		"typedef": [false],
+		"unified-signatures": true,
+		"use-isnan": true,
+		"member-ordering": [
+			true,
+			{
+				"order": [
+					"static-field",
+					"instance-field",
+					"constructor",
+					"static-method",
+					"instance-method"
+				]
+			}
+		],
+		"space-before-function-paren": [
+			true,
+			{
+				"anonymous": "never",
+				"named": "never",
+				"asyncArrow": "always",
+				"method": "never",
+				"constructor": "never"
+			}
+		],
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			}
+		],
+		"variable-name": [
+			true,
+			"check-format",
+			"allow-leading-underscore",
+			"ban-keywords"
+		],
+		"whitespace": [
+			true,
+			"check-branch",
+			"check-decl",
+			"check-operator",
+			"check-separator",
+			"check-type"
+		],
+
+		"ter-no-mixed-spaces-and-tabs": [
+			true,
+			{ "type": "tabs", "smartTabs": true }
+		],
+		// tslint-eslint-rules
+		"no-duplicate-parameter-names": true,
+		"no-exec-script": true,
+
+		// tslint-microsoft-contrib
+		"no-for-in": true,
+		"function-constructor": true,
+		"no-typeof-undefined": true,
+		"unnecessary-bind": true,
+		"no-unnecessary-field-initialization": true,
+		"no-unnecessary-override": true,
+		"no-useless-files": true,
+		"promise-must-complete": true,
+		"react-anchor-blank-noopener": true,
+		"react-this-binding-issue": false,
+		"use-named-parameter": true,
+
+		// misc-tslint-rules
+		"sort-imports": true,
+
+		// tslint-react
+		"jsx-alignment": true,
+		"jsx-ban-props": [true, ["dangerouslySetInnerHTML"]],
+		"jsx-curly-spacing": [true, "never"],
+		"jsx-equals-spacing": [true, "never"],
+		"jsx-key": true,
+		"jsx-no-bind": true,
+		"jsx-no-lambda": false,
+		"jsx-no-string-ref": true,
+		"jsx-self-close": true,
+		"jsx-use-translation-function": [true, "allow-punctuation"],
+		"jsx-wrap-multiline": true,
+
+		// tslint-consistent-codestyle
+		"no-collapsible-if": true,
+		"no-unnecessary-else": true,
+		"early-exit": false,
+		"no-static-this": true,
+		"object-shorthand-properties-first": true,
+		"no-unused": true,
+		"naming-convention": [
+			true,
+			// forbid leading and trailing underscores and enforce camelCase on EVERY name. will be overridden by subtypes if needed
+			{
+				"type": "default",
+				"format": "camelCase",
+				"leadingUnderscore": "forbid",
+				"trailingUnderscore": "forbid"
+			},
+			// require all global constants to be camelCase or UPPER_CASE
+			// all other variables and functions still need to be camelCase
+			{
+				"type": "variable",
+				"modifiers": ["global", "const"],
+				"format": ["camelCase", "UPPER_CASE"]
+			},
+			// require exported constant variables that are initialized with functions to be camelCase
+			{
+				"type": "functionVariable",
+				"modifiers": ["export", "const"],
+				"format": "camelCase"
+			},
+			// allow leading underscores for unused parameters, because `tsc --noUnusedParameters` will not flag underscore prefixed parameters
+			// all other rules (trailingUnderscore: forbid, format: camelCase) still apply
+			{
+				"type": "parameter",
+				"modifiers": "unused",
+				"leadingUnderscore": "allow"
+			},
+			// require leading underscores for private properties and methods, all other rules still apply
+			{
+				"type": "member",
+				"modifiers": "private"
+			},
+			// same for protected
+			{
+				"type": "member",
+				"modifiers": "protected",
+				"leadingUnderscore": "require"
+			},
+			// exclicitly disable the format check only for method toJSON
+			{
+				"type": "method",
+				"filter": "^toJSON$",
+				"format": null
+			},
+			// enforce UPPER_CASE for all public static readonly(!) properties
+			{
+				"type": "property",
+				"modifiers": ["public", "static", "const"],
+				"format": "UPPER_CASE"
+			},
+			// enforce PascalCase for classes, interfaces, enums, etc. Remember, there are still no underscores allowed.
+			{
+				"type": "type",
+				"format": "PascalCase"
+			},
+			// abstract classes must have the prefix "Abstract". The following part of the name must be valid PascalCase
+			{
+				"type": "class",
+				"modifiers": "abstract",
+				"prefix": "Abstract"
+			},
+			// interface names must start with "I". The following part of the name must be valid PascalCase
+			{
+				"type": "interface",
+				"prefix": "I"
+			},
+			// generic type parameters must start with "T"
+			// most of the time it will only be T, which is totally valid, because an empty string conforms to the PascalCase check
+			// By convention T, U and V are used for generics. You could enforce that with "regex": "^[TUV]$" and if you are care that much for performance, you could disable every other check by setting a falsy value
+			{
+				"type": "genericTypeParameter",
+				"prefix": "T"
+			},
+			// enum members must be in PascalCase. Without this config, enumMember would inherit UPPER_CASE from public static const property
+			{
+				"type": "enumMember",
+				"format": "PascalCase"
+			}
+		],
+
+		// Disabled
+		"no-default-export": false,
+		"arrow-return-shorthand": false,
+		"ban": false,
+		"completed-docs": false,
+		"file-header": [false],
+		"import-blacklist": false,
+		"jsdoc-format": false,
+		"linebreak-style": [false],
+		"max-classes-per-file": [false, 1],
+		"max-file-line-count": [false],
+		"member-access": false,
+		"newline-before-return": false,
+		"newline-per-chained-call": false,
+		"no-any": false,
+		"no-console": false,
+		"no-empty-interface": false,
+		"no-magic-numbers": [false],
+		"no-non-null-assertion": false,
+		"no-null-keyword": false,
+		"no-object-literal-type-assertion": false,
+		"no-require-imports": false,
+		"no-string-literal": false,
+		"no-var-requires": false,
+		"object-literal-sort-keys": false,
+		"ordered-imports": false,
+		"prefer-function-over-method": false,
+		"prefer-switch": false,
+		"switch-default": false,
+		"const-parameters": false,
+		"no-import-side-effect": false,
+
+		// tslint-react Disabled
+		"jsx-ban-elements": [false],
+		"jsx-boolean-value": [false],
+		"jsx-no-multiline-js": false,
+		"no-unused-expression": false,
+
+		// Requires type-checking (would be nice...)
+		"await-promise": false,
+		"no-floating-promises": false,
+		"no-unused-variable": false,
+		"no-use-before-declare": false,
+		"no-inferred-empty-object-type": false,
+		"restrict-plus-operands": false,
+
+		// Requires type-checking disabled
+		"deprecation": false,
+		"match-default-export-name": false,
+		"no-boolean-literal-compare": false,
+		"no-for-in-array": false,
+		"no-unbound-method": false,
+		"no-unnecessary-qualifier": false,
+		"no-unnecessary-type-assertion": false,
+		"no-unsafe-any": false,
+		"no-void-expression": false,
+		"prefer-readonly": false,
+		"promise-function-async": false,
+		"return-undefined": false,
+		"strict-boolean-expressions": false,
+		"strict-type-predicates": false,
+		"use-default-type-parameter": false
+	}
+}

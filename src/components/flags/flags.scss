@@ -1,0 +1,84 @@
+.flags {
+	position: absolute;
+	top: 150px;
+	left: 20px;
+	.flag {
+		margin-bottom: 10px;
+		.text {
+			background: rgba(0, 0, 0, 0.9);
+			color: #fff;
+			font-size: 13px;
+			padding: 5px 10px;
+			text-align: center;
+		}
+		.flagBlock {
+			width: 130px;
+			height: 50px;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: url(./../../img/flag.png);
+			}
+		}
+		&.white {
+			.flagBlock {
+				background: rgb(255, 255, 255);
+			}
+		}
+		&.blue {
+			.flagBlock {
+				background: rgb(73, 73, 212);
+			}
+		}
+		&.yellow {
+			.flagBlock {
+				background: rgb(252, 248, 49);
+			}
+		}
+		&.black {
+			.flagBlock {
+				background: rgb(0, 0, 0);
+			}
+		}
+		&.checkered {
+			.flagBlock {
+				background-image: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 0),
+						rgba(255, 255, 255, 0)
+					),
+					linear-gradient(to right, black 50%, white 50%),
+					linear-gradient(to bottom, black 50%, white 50%);
+				background-blend-mode: normal, difference, normal;
+				background-size: 34px 33px;
+			}
+		}
+		&.blackAndWhite {
+			.flagBlock {
+				background: #fff;
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 50px 130px 0 0;
+					border-color: #000000 transparent transparent transparent;
+				}
+			}
+		}
+		&.green {
+			.flagBlock {
+				background: rgb(41, 194, 92);
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.pitstop {
+	&:empty {
+		content: '';
+	}
+}
+.pitInfoFixed {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	transform: translate(-50%, 0);
+	border-radius: 10px;
+}
+.pitInfo,
+.pitInfoFixed {
+	position: absolute;
+	top: 310px;
+	left: 50%;
+	.inner {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 10px;
+		transform: translate(-50%, 0);
+		border-radius: 10px;
+	}
+	text-align: center;
+	.tasks {
+		display: flex;
+		height: 70px;
+		.task {
+			flex: auto;
+			margin: 10px;
+			border: 2px solid #fff;
+			padding: 10px 10px 13px;
+			border-radius: 10px;
+		}
+	}
+	.title {
+		font-size: 20px;
+		padding: 0 0 5px;
+	}
+	.left {
+		opacity: 0.5;
+	}
+	.barContainer {
+		background: blue;
+		display: inline-block;
+		width: 700px;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 5px;
+		margin: 0 10px 10px;
+		.bar {
+			height: 4px;
+			border-radius: 5px;
+			background: #fff;
+			box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+	.totalTime {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		font-size: 30px;
+		transform: translate(-50%, 10px);
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.4);
+	}
+}
