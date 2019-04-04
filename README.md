@@ -1,5 +1,9 @@
 ![R3E](https://cloud.githubusercontent.com/assets/12783101/8024034/cd3c7c84-0d24-11e5-9e5f-3bf6fbab713f.png)
 
+---
+
+![Preview](https://raw.githubusercontent.com/sector3studios/webhud/master/src/img/preview.jpg)
+
 # Web Hud
 
 This is a sample showing how to create a web hud using the shared memory API for
