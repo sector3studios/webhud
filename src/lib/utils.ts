@@ -105,12 +105,11 @@ export function formatTime(
 	format: string,
 	addPlusPrefix = false
 ) {
-	const offset = 1000 * 60 * 60;
 	const prefix = seconds < 0 ? '-' : addPlusPrefix ? '+' : '';
 	const ms = Math.abs(seconds * 1000);
-	formatTimeReuseDate.setTime(ms - offset);
+	formatTimeReuseDate.setTime(ms);
 
-	return prefix + speedDate.cached(format, formatTimeReuseDate);
+	return prefix + speedDate.UTC.cached(format, formatTimeReuseDate);
 }
 
 export function widgetSettings(props: any) {
