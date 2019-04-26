@@ -22,6 +22,7 @@ For discussions or support go [here](https://forum.sector3studios.com/index.php?
 
 -   Development requires node/npm
 -   For this to work you need to be running `public/dash.zip/dash.exe`. It is the source of all the data being used.
+-   Run `npm install` to install all dependencies
 -   Start development by running `npm start` and opening http://localhost:4000/
 -   Add `-webdev -webHudUrl=http://localhost:4000/` to the game launch arguments
 -   When you are happy with your changes run `npm run build` and the final files will be put in the `dist/` folder.
