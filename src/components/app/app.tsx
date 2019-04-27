@@ -872,7 +872,8 @@ export default class App extends React.Component<IProps> {
 						const languageLookup = {
 							de: _('German'),
 							en: _('English'),
-							fr: _('French')
+							fr: _('French'),
+							cn: _('Chinese')
 						};
 						return (
 							<div
