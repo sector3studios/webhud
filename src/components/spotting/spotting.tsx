@@ -64,6 +64,11 @@ export default class Spotting extends React.Component<IProps, {}> {
 	};
 
 	audio = new Audio();
+
+	// Required otherwise there are issues with
+	// The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
+	audioIsPlaying = false;
+
 	audioContext = new AudioContext();
 	mediaElementSource = this.audioContext.createMediaElementSource(this.audio);
 	stereoPanner = this.audioContext.createStereoPanner();
@@ -83,6 +88,14 @@ export default class Spotting extends React.Component<IProps, {}> {
 		this.stereoPanner.connect(this.audioContext.destination);
 
 		this.audio.src = require('./../../sounds/beep.wav');
+
+		this.audio.onplaying = () => {
+			this.audioIsPlaying = true;
+		};
+
+		this.audio.onpause = () => {
+			this.audioIsPlaying = false;
+		};
 	}
 	componentWillUnmount() {
 		unregisterUpdate(this.update);
@@ -246,7 +259,8 @@ export default class Spotting extends React.Component<IProps, {}> {
 				!r3e.data.GameInReplay &&
 				this.props.settings.subSettings.shouldBeep.enabled &&
 				this.audio.paused &&
-				this.audioContext.state !== 'suspended'
+				this.audioContext.state !== 'suspended' &&
+				!this.audioIsPlaying
 			) {
 				this.audio.play();
 			}
