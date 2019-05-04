@@ -147,7 +147,7 @@ export function setupSentry() {
 		environment: process.env.NODE_ENV,
 		blacklistUrls: [/extensions\//i, /^chrome:\/\//i],
 		beforeSend: (event: Sentry.SentryEvent) => {
-			const gameState = r3e.data;
+			const gameState = JSON.parse(JSON.stringify(r3e.data));
 
 			// Snapshot will be too big with driverData in it.
 			delete gameState.DriverData;
