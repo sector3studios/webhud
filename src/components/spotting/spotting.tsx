@@ -262,7 +262,8 @@ export default class Spotting extends React.Component<IProps, {}> {
 				this.audioContext.state !== 'suspended' &&
 				!this.audioIsPlaying
 			) {
-				this.audio.play();
+				// tslint:disable-next-line:no-empty
+				this.audio.play().catch(() => {});
 			}
 		}
 	}
