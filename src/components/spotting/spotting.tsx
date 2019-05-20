@@ -99,6 +99,7 @@ export default class Spotting extends React.Component<IProps, {}> {
 	}
 	componentWillUnmount() {
 		unregisterUpdate(this.update);
+		this.audioContext.close();
 	}
 
 	@action
