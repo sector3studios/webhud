@@ -1001,7 +1001,10 @@ export default interface IShared {
 	TireUnused3: number;
 	TireUnused4: number;
 	TireUnused5: ITireData<number>;
-	TireUnused6: ITireData<number>;
+
+	// Tire load (N)
+	// -1.0 = N/A
+	TireLoad: ITireData<number>;
 	//////////////////////////////////////////////////////////////////////////
 	/** Damage */
 	//////////////////////////////////////////////////////////////////////////
