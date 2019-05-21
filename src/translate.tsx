@@ -1,7 +1,7 @@
 import { observable } from 'mobx';
 import translations from './translations';
 
-export type Locales = 'en' | 'de' | 'fr';
+export type Locales = 'en' | 'de' | 'fr' | 'cn';
 
 type TranslateArgument = string | number;
 type TranslateArguments = ITranslateObject | TranslateArgument[];
