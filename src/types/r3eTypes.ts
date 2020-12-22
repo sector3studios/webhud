@@ -683,8 +683,10 @@ export default interface IShared {
 	SessionTimeDuration: number;
 	SessionTimeRemaining: number;
 
+	/** Server max incident points, -1 = N/A */
+	MaxIncidentPoints: number;
+
 	/** Reserved data */
-	EventUnused1: number;
 	EventUnused2: number;
 
 	//////////////////////////////////////////////////////////////////////////
@@ -744,9 +746,9 @@ export default interface IShared {
 	/** Number of pitstops the current vehicle has performed (-1 = N/A) */
 	NumPitstopsPerformed: number;
 
-	/** Reserved data */
-	PitUnused1: number;
-	PitUnused2: number;
+	/** Pitstop with min duration (-1.0 = N/A, else seconds) */
+	PitMinDurationTotal: number;
+	PitMinDurationLeft: number;
 
 	//////////////////////////////////////////////////////////////////////////
 	/** Scoring & Timings */
@@ -816,12 +818,12 @@ export default interface IShared {
 	BestIndividualSectorTimeSelf: ISectors;
 	BestIndividualSectorTimeLeader: ISectors;
 	BestIndividualSectorTimeLeaderClass: ISectors;
+	IncidentPoints: number;
 
 	/** Reserved data */
 	ScoreUnused1: number;
 	ScoreUnused2: number;
 	ScoreUnused3: number;
-	ScoreUnused4: number;
 
 	//////////////////////////////////////////////////////////////////////////
 	/** Vehicle information */
@@ -931,12 +933,19 @@ export default interface IShared {
 	/** Note: Not valid for AI or remote players */
 	BrakeBias: number;
 
+	/** DRS activations available in total (-1 = N/A or endless)
+	 */
+	DrsNumActivationsTotal: number;
+
+	/** PTP activations available in total
+	 * (-1 = N/A, or there's no restriction per lap, or endless)
+	 */
+	PtpNumActivationsTotal: number;
+
 	/** Reserved data */
 	VehicleUnused1: number;
 	VehicleUnused2: number;
-	VehicleUnused3: number;
-	VehicleUnused4: number;
-	VehicleUnused5: IOrientation;
+	VehicleUnused3: IOrientation;
 
 	//////////////////////////////////////////////////////////////////////////
 	/** Tires */
@@ -988,12 +997,19 @@ export default interface IShared {
 	/** Note: Not valid for AI or remote players */
 	BrakePressure: ITireData<number>;
 
+	//////////////////////////////////////////////////////////////////////////
+	/** Electronics */
+	//////////////////////////////////////////////////////////////////////////
+
+	// -1 = N/A
+	TractionControlSetting: number;
+	EngineMapSetting: number;
+	EngineBrakeSetting: number;
+
 	/** Reserved data */
+
 	TireUnused1: number;
-	TireUnused2: number;
-	TireUnused3: number;
-	TireUnused4: number;
-	TireUnused5: ITireData<number>;
+	TireUnused2: ITireData<number>;
 
 	// Tire load (N)
 	// -1.0 = N/A
