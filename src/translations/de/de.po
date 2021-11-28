@@ -190,7 +190,7 @@ msgstr "Vorauss. Position"
 #. {_('Est. Time')}:{' '}
 #. <span className="mono">
 msgid "Est. Time"
-msgstr "Vorauss. Rundenzeit"
+msgstr "Vorauss. Zeit"
 
 #. ./src/components/app/app.tsx:129:129
 #. estimatedLapTime: {
