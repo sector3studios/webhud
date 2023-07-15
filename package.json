@@ -4,11 +4,11 @@
 	"description": "R3E Web HUD",
 	"private": true,
 	"scripts": {
-		"start": "node ./node_modules/ts-node/dist/bin.js ./server/server",
-		"build": "./node_modules/.bin/webpack --env=production --progress --profile",
-		"translations:extract": "node ./node_modules/ts-node/dist/bin.js ./server/tools/localization/extractTranslations",
-		"translations:generate": "node ./node_modules/ts-node/dist/bin.js ./server/tools/localization/generateTranslations",
-		"translations:update": "npm run translations:extract && npm run translations:generate"
+		"start": "set NODE_OPTIONS=--openssl-legacy-provider && node .\\node_modules\\ts-node\\dist\\bin.js .\\server\\server",
+		"build": "set NODE_OPTIONS=--openssl-legacy-provider && .\\node_modules\\.bin\\webpack --env=production --progress --profile",
+		"translations:extract": "set NODE_OPTIONS=--openssl-legacy-provider && node .\\node_modules\\ts-node\\dist\\bin.js .\\server\\tools\\localization\\extractTranslations",
+		"translations:generate": "set NODE_OPTIONS=--openssl-legacy-provider && node .\\node_modules\\ts-node\\dist\\bin.js .\\server\\tools\\localization\\generateTranslations",
+		"translations:update": "set NODE_OPTIONS=--openssl-legacy-provider && npm run translations:extract && npm run translations:generate"
 	},
 	"author": "careers@sector3studios.com",
 	"license": "Unlicense",
