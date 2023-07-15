@@ -1,7 +1,7 @@
 import chokidar from 'chokidar';
 import DtsCreator from 'typed-css-modules';
 import fs from 'fs';
-import sass from 'node-sass';
+import sass from 'sass';
 import WebSocket from 'ws';
 
 const dtsCreator = new DtsCreator();
@@ -31,6 +31,9 @@ export function generateScssTypingsAndBroadcastChange(port: number) {
 				(err, result) => {
 					if (err) {
 						return console.error(err);
+					}
+					if (!result) {
+						return;
 					}
 
 					// Strip urls since we don't do file resolving with
